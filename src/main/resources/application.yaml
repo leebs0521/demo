@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:sqlite:./data/problem.sqlite3
+    driver-class-name: org.sqlite.JDBC
+
+server:
+  port: 5678
+  address: 0.0.0.0
